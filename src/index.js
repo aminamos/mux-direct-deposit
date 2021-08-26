@@ -32,7 +32,7 @@ async function checkMasterAccess(assetItem) {
     assetItem.master_access === 'temporary' &&
     assetItem.master.status === 'ready'
   ) {
-    console.log('skipped, master access already ready and available');
+    console.log('skipped, master access ready and available');
   } else if (
     assetItem.master_access === 'temporary' &&
     assetItem.master.status !== 'ready'
@@ -88,7 +88,7 @@ app.get('/add-master-to-source', (req, res) => {
           const j = i;
           setTimeout(() => {
             checkMasterAccess(firstVideoListArray[i]);
-          }, j * 2500);
+          }, j * 1500);
         })();
       }
     } catch (error) {

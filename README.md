@@ -30,10 +30,8 @@ Run `node src/index.js` in terminal
 
 Open a new terminal window
 
-Run `curl localhost:3000` to add master access for all assets
+Run `curl localhost:3000/add-master-to-source` to add master access for all assets
 
-(TODO - add this function & endpoint) Run `curl localhost:3000/check-master-status` to confirm which assets do, or do not, have a `master_access` status of `ready`
+Run `curl localhost:3000/upload-assets-to-destination` to move assets from the source environment to the destination environment
 
-Run `curl localhost:3000/uploadall` to move assets from the source environment to the destination environment
-
-Run `curl localhost:3000/turn-off-master-all-assets` to remove master access for all assets in the source environment
+Run `curl localhost:3000/remove-master-from-source` to remove master access for all assets in the source environment
