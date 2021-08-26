@@ -9,7 +9,7 @@ Add master access to all assets, move assets from one environment to another.
 This will not delete assets in the source environment. There's a 2.5 second delay between each request, which is a bit above the required rate limit. At this rate, 500 requests would take about 20 minutes.
 
 ## Configuration
-First, set environment variables:
+First, create a new file in the root directory named `.env` with the following values:
 
 Source environment's access token: MUX_TOKEN_ID=
 
