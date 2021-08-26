@@ -54,7 +54,8 @@ function uploadVideosToOtherEnvironment(assetItem) {
   myAxios.post('https://api.mux.com/video/v1/assets', {
     input: assetItem.master.url,
     playback_policy: 'public',
-  });
+  })
+  .then(console.log(`Uploaded asset to new environment: ${assetItem.id}`));
 }
 
 async function turnMasterAccessOffForAllAssets(assetItem) {
@@ -135,7 +136,7 @@ app.get('/remove-master-from-source', (req, res) => {
         const j = i;
         setTimeout(() => {
           turnMasterAccessOffForAllAssets(assetsForMasterRemoval[i]);
-        }, j * 2500);
+        }, j * 1500);
       })();
     }
   }
