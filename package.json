@@ -1,0 +1,26 @@
+{
+  "name": "mux-node-sdk-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "format": "eslint src/** --no-error-on-unmatched-pattern",
+    "lint": "yarn format"
+  },
+  "dependencies": {
+    "@mux/mux-node": "^3.2.3",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "^4.17.1",
+    "prettier": "^2.3.2"
+  }
+}
